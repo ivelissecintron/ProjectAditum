@@ -30,7 +30,7 @@ export default class Login extends Component {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="email" bsSize="large">
+          <FormGroup controlid="email" bssize="large">
             <Label>Email</Label>
             <Input type="email" name="email" id="exampleEmail" placeholder="Email Address" />
             <Form
@@ -40,7 +40,7 @@ export default class Login extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
+          <FormGroup controlid="password" bssize="large">
             <Label>Password</Label>
             <Input type="password" name="password" id="examplePassword" placeholder="Password" />
             <Form
@@ -51,7 +51,7 @@ export default class Login extends Component {
           </FormGroup>
           <Button
             block
-            bsSize="large"
+            bssize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
