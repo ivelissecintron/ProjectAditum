@@ -1,18 +1,12 @@
 import React, { Component } from 'react'
+import Table from '../components/table'
 
 class Home extends Component {
-    constructor() {
-        super()
-    }
-
-
+    
     render() {
-        const imageStyle = {
-            width: 400
-        }
         return (
             <div>
-                
+                <Table/>
             </div>
         )
 

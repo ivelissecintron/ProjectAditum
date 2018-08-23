@@ -7,7 +7,6 @@ import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
 import Footer from './components/footer'
-import Table from './components/table'
 
 class App extends Component {
   constructor() {
@@ -54,16 +53,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-   
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
           <p>Welcome to the Aditum Dashboard, {this.state.username}!</p>
         }
         {/* Routes to different components */}
-        <Route
-          exact path="/"
-          component={Home} />
+        
         <Route
           path="/login"
           render={() =>
@@ -79,7 +75,7 @@ class App extends Component {
         <Route
           path="/dashboard"
           render={() =>
-            <Table/>}
+            <Home/>}
         />
         <Footer />
       </div>
