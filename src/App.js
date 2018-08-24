@@ -70,12 +70,14 @@ class App extends Component {
         <Route
           path="/signup"
           render={() =>
-            <Signup/>}
+            <Signup />}
         />
         <Route
           path="/dashboard"
           render={() =>
-            <Home/>}
+            this.state.loggedIn ? <Home /> :  <LoginForm
+            updateUser={this.updateUser}
+          />}
         />
         <Footer />
       </div>

@@ -39,11 +39,12 @@ class LoginForm extends Component {
                         loggedIn: true,
                         username: response.data.username
                     })
-                    // update the state to redirect to home
+                    // update the state to redirect to dashboard
                     this.setState({
-                        redirectTo: '/'
+                        redirectTo: '/dashboard'
                     })
                 }
+                
             }).catch(error => {
                 alert('Please try again! ')
                 console.log(error);
@@ -57,7 +58,7 @@ class LoginForm extends Component {
         } else {
             return (
                 <div>
-                    <h4>Login</h4>
+                    <h4>login</h4>
                     <form className="form-horizontal">
                         <div className="form-group">
                             <div className="col-1 col-ml-auto">

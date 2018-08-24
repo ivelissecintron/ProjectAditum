@@ -12,14 +12,22 @@ class Navbar extends Component {
 
     logout(event) {
         event.preventDefault()
-        console.log('logging out')
-        axios.post('/user/logout').then(response => {
-          console.log(response.data)
+        alert('Logged Out!')
+        axios
+            .post('/user/logout')
+            
+            .then(response => {
+            console.log(response.data)
           if (response.status === 200) {
             this.props.updateUser({
-              loggedIn: false,
-              username: null
+              loggedIn: true,
+              username: undefined
             })
+            // update the state to redirect to login page
+            this.setState({
+                redirectTo: '/'               
+            })
+            window.location.pathname = "/";
           }
         }).catch(error => {
             console.log('Logout error')
@@ -56,7 +64,7 @@ class Navbar extends Component {
                     <div className="col-4 col-mr-auto">
                     <div id="top-filler"></div>
                         <img src={logo} className="App-logo" alt="logo" />
-                        <h1 className="App-title">Aditum</h1>
+                        <h1 className="App-title">aditum</h1>
                     </div>
                 </header>
             </div>

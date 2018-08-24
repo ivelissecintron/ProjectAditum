@@ -9,13 +9,17 @@
 }
 
 .App-header {
-  background-color: #B8B8B8;
+  background-color: #808080;
   height: 150px;
   color: white;
+  padding-top: 15%;
+ 
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+ 
+
 }
 
 .App-intro {
@@ -52,4 +56,16 @@
   right: 0;
   padding: 3px;
   background: #B8B8B8;
+}
+
+.btn.btn-primary {
+  background: black !important;
+}
+
+h4 {
+  padding-top: 5%;
+}
+
+header {
+  padding-top: 10%;
 }
