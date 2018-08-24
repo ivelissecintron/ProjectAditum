@@ -31,12 +31,12 @@ class Signup extends Component {
 			.then(response => {
 				console.log(response)
 				if (!response.data.errmsg) {
-					console.log('successful signup')
+					alert('Thank you for signing up ' + this.state.username + '!')
 					this.setState({ //redirect to login page
 						redirectTo: '/login'
 					})
 				} else {
-					console.log('username already taken')
+					alert('Sorry, please try a different username.')
 				}
 			}).catch(error => {
 				console.log('signup error: ')

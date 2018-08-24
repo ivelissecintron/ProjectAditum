@@ -4,7 +4,7 @@ import { Table } from 'reactstrap';
 export default class Example extends React.Component {
   render() {
     return (
-      <Table striped>
+       <Table striped>
         <thead>
           <tr>
             <th>ID #</th>
@@ -46,6 +46,6 @@ export default class Example extends React.Component {
           </tr>
         </tbody>
       </Table>
-    );
+      );
   }
 }

@@ -23,9 +23,9 @@ class LoginForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        console.log('handleSubmit')
+        console.log('Loggin in!')
 
-        axios
+        axios   
             .post('/user/login', {
                 username: this.state.username,
                 password: this.state.password
@@ -45,7 +45,7 @@ class LoginForm extends Component {
                     })
                 }
             }).catch(error => {
-                console.log('login error: ')
+                alert('Please try again! ')
                 console.log(error);
                 
             })
