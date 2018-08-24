@@ -31,7 +31,7 @@ class LoginForm extends Component {
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
+                alert('Logged in!')
                 console.log(response)
                 if (response.status === 200) {
                     // update App.js state
