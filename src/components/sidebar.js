@@ -1,5 +1,5 @@
 import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import { bubble as Menu } from 'react-burger-menu';
 import { FaUserTimes } from 'react-icons/fa'; 
 import { FaUserPlus } from 'react-icons/fa';
 import { FaUserEdit } from 'react-icons/fa';

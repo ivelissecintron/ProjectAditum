@@ -48,6 +48,7 @@ class Navbar extends Component {
                             <section className="navbar-section">
                                 <Link to="/login" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">Logout</span></Link>
+                                <h2><span className="userName">Welcome to the Aditum Dashboard, {this.props.username}!</span></h2>
                             </section>
                         ) : (
                                 <section className="navbar-section">
