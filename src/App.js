@@ -54,7 +54,6 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} username={this.state.username}/>
-        
         <Route
           path="/login"
           render={() =>
