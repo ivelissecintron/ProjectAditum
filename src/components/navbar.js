@@ -48,7 +48,7 @@ class Navbar extends Component {
                             <section className="navbar-section">
                                 <Link to="/login" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">Logout</span></Link>
-                                <h2><span className="userName">Welcome to the Aditum Dashboard, {this.props.username}!</span></h2>
+                                <h3><span className="userName">Welcome to the Aditum Dashboard, {this.props.username}!</span></h3>
                             </section>
                         ) : (
                                 <section className="navbar-section">
@@ -64,7 +64,6 @@ class Navbar extends Component {
                     <div className="col-4 col-mr-auto">
                     <div id="top-filler"></div>
                         <img src={logo} className="App-logo" alt="logo" />
-                        <h1 className="App-title">aditum</h1>
                     </div>
                 </header>
             </div>
